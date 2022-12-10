@@ -1,0 +1,107 @@
+:root {
+  --magenta: hsl(300, 43%, 22%);
+  --pink: hsl(333, 80%, 67%);
+  --grey-magenta: hsl(303, 10%, 53%);
+  --light-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 375px;
+  text-align: center;
+  background-image: url("/images/bg-pattern-top-mobile.svg"),
+    url(/images/bg-pattern-bottom-mobile.svg);
+  background-position: top, bottom;
+  background-size: 374px 272px, 1086px 673px;
+  background-repeat: no-repeat;
+  border: solid 3px var(--light-magenta);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: var(--magenta);
+  padding: 5.125rem 1.5rem 1.0625rem 1.5rem;
+}
+
+.headline-statement {
+  font-size: 1.1875rem;
+  line-height: 1.5625rem;
+  font-weight: 500;
+  color: var(--grey-magenta);
+  padding: 0 1.5rem 39px 1.5rem;
+}
+
+.star-rating div {
+  font-size: 1.0625rem;
+  line-height: 1rem;
+  font-weight: 700;
+  background-color: var(--light-magenta);
+  color: var(--magenta);
+  max-width: 327px;
+  height: 78px;
+  border-radius: 8px;
+  margin: 0 1.5rem 1rem 1.5rem;
+}
+
+.star-rating div:nth-of-type(3) {
+  margin-bottom: 3.25rem;
+}
+
+.star-rating img {
+  padding: 1rem 0 0.9375rem 0;
+}
+
+.star-reviews div {
+  max-width: 327px;
+  height: 248px;
+  border-radius: 0.5rem;
+  margin: 0 1.5rem 0.5rem 1.5rem;
+  position: relative;
+  background-color: var(--magenta);
+  color: var(--white);
+}
+.star-reviews img {
+  float: left;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.name {
+  padding-top: 2.6875rem;
+  padding-right: 5.9375rem;
+}
+
+.quote {
+  padding: 0 1.9375rem 0 1.9375rem;
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+}
+
+.star-reviews h2 {
+  padding-top: 0.3125rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.0625rem;
+  padding-right: 5.3125rem;
+  color: var(--pink);
+}
